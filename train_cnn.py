@@ -1,12 +1,11 @@
-# train_cnn.py
-
 import tensorflow as tf
-from tensorflow.keras import layers, models
 
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
 EPOCHS = 10
 
+layers = tf.keras.layers
+models = tf.keras.models
 train_ds = tf.keras.utils.image_dataset_from_directory(
     "dataset/train",
     image_size=IMG_SIZE,
